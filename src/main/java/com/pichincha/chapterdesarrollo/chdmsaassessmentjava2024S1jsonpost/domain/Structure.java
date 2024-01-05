@@ -17,6 +17,7 @@ public class Structure {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "TOKEN")
     private String token;
 
     @Builder.Default
