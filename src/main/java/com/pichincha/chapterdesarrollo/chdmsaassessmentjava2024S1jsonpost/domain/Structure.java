@@ -2,7 +2,6 @@ package com.pichincha.chapterdesarrollo.chdmsaassessmentjava2024S1jsonpost.domai
 
 import jakarta.persistence.*;
 import lombok.Builder;
-import lombok.Data;
 
 import java.util.HashSet;
 import java.util.Set;

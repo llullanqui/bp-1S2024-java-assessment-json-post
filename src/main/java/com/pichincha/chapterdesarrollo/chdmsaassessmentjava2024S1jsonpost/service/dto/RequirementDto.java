@@ -1,25 +1,24 @@
 package com.pichincha.chapterdesarrollo.chdmsaassessmentjava2024S1jsonpost.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.pichincha.chapterdesarrollo.chdmsaassessmentjava2024S1jsonpost.domain.enums.RequirementUrgency;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Set;
-
 @Builder
 @Data
-public class StructureDto {
+public class RequirementDto {
 
     @JsonProperty
     private int id;
 
     @JsonProperty
     @NotBlank
-    private String token;
+    private String requirement;
 
     @JsonProperty
-    @NotEmpty
-    private Set<RequirementDto> requirements;
+    @NotBlank
+    private RequirementUrgency urgency;
+
 }
